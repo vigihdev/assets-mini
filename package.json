@@ -1,0 +1,21 @@
+{
+    "name": "@vigihdev/assets-mini",
+    "version": "0.1.0-dev",
+    "description": "Super mini asset builder config (SASS + JS concat)",
+    "main": "assets/index.js",
+    "type": "commonjs",
+    "private": true,
+    "author": "Vigihdev Developer",
+    "license": "MIT",
+    "keywords": [
+        "sass",
+        "mini",
+        "assets",
+        "builder"
+    ],
+    "scripts": {
+        "build:sass": "node assets/build-sass.js",
+        "build:js": "node assets/build-js.js",
+        "watch": "node assets/watch.js"
+    }
+}
