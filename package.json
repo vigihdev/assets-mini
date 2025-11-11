@@ -17,5 +17,14 @@
         "build:sass": "node assets/build-sass.js",
         "build:js": "node assets/build-js.js",
         "watch": "node assets/watch.js"
+    },
+    "devDependencies": {
+        "grunt": "^1.5.3",
+        "grunt-concat-css": "^0.3.2",
+        "grunt-contrib-concat": "^2.1.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-sass": "^2.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-shell": "^4.0.0"
     }
 }
