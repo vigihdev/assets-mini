@@ -1,7 +1,7 @@
 // assets-grunt.js
 'use strict';
 
-const AssetsSass = require('../../assets').AssetsSass
+const AssetsSass = require('../index').AssetsSass
 
 const COMMAND = 'assets';
 

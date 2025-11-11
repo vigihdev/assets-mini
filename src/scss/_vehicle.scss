@@ -1,0 +1,58 @@
+.vehicle-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    @include media-screen-min-max(xs, md) {
+        padding-left: $getter;
+    }
+}
+.vehicle-card {
+    display: block;
+    margin-bottom: 32px;
+    background-color: #fff;
+    @include border-radius(8px);
+    @include elevation(4);
+    @include vehicle-grid(5);
+    @include media-screen-min-max(xs, sm) {
+        @include vehicle-grid(1);
+    }
+    @include media-screen-min-max(sm, md) {
+        @include vehicle-grid(3);
+    }
+    @include media-screen-min-max(lg, xl) {
+    }
+    .vehicle-card__media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #d8d8d8;
+        .vehicle-card__image {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    .vehicle-card__body {
+        padding: 12px;
+        .vehicle-card__title {
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #d8d8d8;
+            @include poppins-bold;
+        }
+        .vehicle-card__price {
+            @include poppins-bold;
+            color: $primary;
+            padding-bottom: 8px;
+        }
+        .vehicle-card__paket {
+            color: $success;
+            font-size: 90%;
+        }
+    }
+    .vehicle-card__action {
+        .btn {
+            @include border-top-radius(0);
+        }
+    }
+}

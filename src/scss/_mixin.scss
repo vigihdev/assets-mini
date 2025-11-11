@@ -1,0 +1,3 @@
+@mixin vehicle-grid($cols) {
+    flex: 0 0 calc((100% / #{$cols}) - 16px);
+}

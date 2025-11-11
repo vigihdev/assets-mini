@@ -1,6 +1,6 @@
 const path = require("path");
 
-const BASEPATH = '/Users/thrubus/Wordpress/thrubus/wp-daftar-harga-thrubus';
+const BASEPATH = path.resolve(__dirname);
 
 module.exports.Paths = {
     Basepath: BASEPATH,

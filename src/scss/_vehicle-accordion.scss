@@ -1,0 +1,47 @@
+// vehicle-accordion.scss
+.vehicle-accordion {
+}
+
+#vehicle-accordion {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.vehicle-accordion__nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-bottom: $getter;
+
+    @include border-radius(4px);
+    @include BoxShadow(1);
+    .vehicle-accordion__button {
+        padding: 12px;
+        margin-right: 8px;
+        font-size: 1.1em;
+        @include poppins-bold;
+        @include transitions(all, 0.3s);
+        &[aria-expanded="true"] {
+            border-bottom: 3px solid $primary;
+            color: $primary;
+            background-color: $secondary;
+        }
+    }
+}
+.vehicle-accordion__content {
+    .vehicle-accordion__list {
+        &.collapsing,
+        &.show {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            @include media-screen-min-max(xs, md) {
+                padding-left: $getter;
+            }
+        }
+        .vehicle-accordion__card {
+        }
+    }
+}
