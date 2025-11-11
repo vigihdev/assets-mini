@@ -1,7 +1,7 @@
 {
     "name": "@vigihdev/assets-mini",
     "version": "0.1.0-dev",
-    "description": "Super mini asset builder config (SASS + JS concat)",
+    "description": "Super mini asset builder config (SASS + JS concat).",
     "main": "assets/index.js",
     "type": "commonjs",
     "private": true,
@@ -18,7 +18,7 @@
         "build:js": "node assets/build-js.js",
         "watch": "node assets/watch.js"
     },
-    "devDependencies": {
+    "dependencies": {
         "grunt": "^1.5.3",
         "grunt-concat-css": "^0.3.2",
         "grunt-contrib-concat": "^2.1.0",
